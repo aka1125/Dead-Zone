@@ -1,8 +1,7 @@
 # dzoneコマンド
 ![test](https://github.com/aka1125/Dead-Zone/actions/workflows/test.yml/badge.svg)
 
-デッドゾーン(不感帯)\n
-ノイズの多い信号から、意味のある変化だけを抽出する非線形フィルタ
+デッドゾーン(不感帯): ノイズの多い信号から、意味のある変化だけを抽出する非線形フィルタ
 
 # 使用例
 
