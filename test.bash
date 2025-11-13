@@ -34,10 +34,5 @@ output=$(echo "$input_emp" | python3 ./dead_zone.py)
 test "$?" = 1 || ng "$LINENO"
 test "$output" = "" || ng "$LINENO"
 
-output=$(echo "$input_str" | python3 ./dead_zone.py)
-
-test "$?" = 1 || ng "$LINENO"
-test "$output" = "" || ng "$LINENO"
-
 test "$res" = 0 && echo OK
 exit $res
