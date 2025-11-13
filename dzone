@@ -2,7 +2,6 @@
 # SPDX-FileCopyrightText: 2025 Yusaku Aka
 # SPDX-License-Identifier: BSD-3-Clause
 
-import numpy as np
 import sys
 
 data_list = []
