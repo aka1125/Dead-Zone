@@ -22,9 +22,11 @@ $ 1.28
 ```
 
 # インストール手順
+```bash
 $ git clone https://github.com/aka1125/Dead-Zone
 $ cd Dead-Zone
 $ chmod +x dead_zone.py
+```
 
 ## 必要なソフトウェア
 - Python
