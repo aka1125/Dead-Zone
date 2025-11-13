@@ -1,0 +1,27 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightText: 2025 Yusaku Aka
+# SPDX-License-Identifier: BSD-3-Clause
+
+import numpy as np
+import sys
+
+data_list = []
+for line in sys.stdin:
+    data_reserve = float(line.strip())
+    data_list.append(data_reserve)
+
+zone=0.1
+last_sent_value=0
+data = data_list
+
+for current_input in data:
+
+    diff = abs(current_input - last_sent_value)
+    
+    if diff > zone:
+        current_output = current_input
+        last_sent_value = current_input
+        print(f"{current_output}")
+    else:
+        current_output = last_sent_value
+        print(f"{current_output}")
