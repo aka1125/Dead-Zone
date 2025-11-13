@@ -23,7 +23,6 @@ $ cat inputEX.txt | ./dzone
 # インストール手順
 ```bash
 $ git clone https://github.com/aka1125/Dead-Zone
-$ pip install numpy
 $ cd Dead-Zone
 $ chmod +x dzone
 ```
