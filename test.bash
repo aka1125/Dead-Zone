@@ -15,21 +15,21 @@ res=0
 input_data=$(printf "1.00\n1.02\n1.11\n1.23\n")
 output_data=$(printf "1.0\n1.0\n1.11\n1.23\n")
 
-output=$(echo "$input_data" | python3 ./dead_zone.py)
+output=$(echo "$input_data" | ./dead_zone.py)
 test "$output" = "$output_data" || ng "$LINENO"
 
 ### STRANGE INSERT ###
 
 #CASE1
 input_str="あ\nい\nう\nえ\nお\n"
-output=$(echo "$input_str" | python3 ./dead_zone.py)
+output=$(echo "$input_str" | ./dead_zone.py)
 
 test "$?" = 1 || ng "$LINENO"
 test "$output" = "" || ng "$LINENO"
 
 #CASE2
 input_emp="\n"
-output=$(echo "$input_emp" | python3 ./dead_zone.py)
+output=$(echo "$input_emp" | ./dead_zone.py)
 
 test "$?" = 1 || ng "$LINENO"
 test "$output" = "" || ng "$LINENO"
