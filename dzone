@@ -4,12 +4,19 @@
 
 import sys
 
+if len(sys.argv) > 1:
+    try:
+        zone = float(sys.argv[1])
+    except ValueError:
+        sys.exit(1)
+else:
+    zone = 0.1
+
 data_list = []
 for line in sys.stdin:
     data_reserve = float(line.strip())
     data_list.append(data_reserve)
 
-zone=0.1
 last_sent_value=0
 data = data_list
 
